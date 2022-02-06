@@ -94,27 +94,12 @@ puts ""
 # Query the cast data and loop through the results to display the cast output for each movie
 # TODO!
 
-************************************************ #CODE START HERE
-# Classes
-# class movie 
-#     def test
-#         puts "test"
-#     end
-# end
-# class person
-#     def test2
-#         puts "test2"
-#     end
-# end
-# class roles
-#     def test3
-#         puts "test3"
-#     end
-# end
+# ************************************************ #CODE START HERE
+
 
 # Variables
-christopher_nolan = Person.where({ name: "Christopher Nolan"})[0]
-puts christopher_nolan.id
+# christopher_nolan = Person.where({ name: "Christopher Nolan"})[0]
+# puts christopher_nolan.id
 
 # Adding people to person table
 person = Person.new
@@ -179,4 +164,22 @@ dark_knight.rating = "PG-13"
 dark_knight.save
 
 dark_knight_rises = Movie.new
+dark_knight_rises.title = "The Dark Knight Rises"
+dark_knight_rises.year = "2012"
+dark_knight_rises.rating = "PG-13"
+# batman_begins.person_id = christopher_nolan.id
+dark_knight_rises.save
+
+# Adding roles to roles table
+# role = role.new
+# role.movie.id = 
+# role.person_id = role.id
+# role.character_name = "Bruce Wayne"
+# role.save
+
+# role = role.new
+# role.movie.id = 
+# role.person_id = role.id
+# role.character_name = " Wayne"
+# role.save
 
