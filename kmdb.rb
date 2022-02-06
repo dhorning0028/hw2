@@ -93,3 +93,90 @@ puts ""
 
 # Query the cast data and loop through the results to display the cast output for each movie
 # TODO!
+
+************************************************ #CODE START HERE
+# Classes
+# class movie 
+#     def test
+#         puts "test"
+#     end
+# end
+# class person
+#     def test2
+#         puts "test2"
+#     end
+# end
+# class roles
+#     def test3
+#         puts "test3"
+#     end
+# end
+
+# Variables
+christopher_nolan = Person.where({ name: "Christopher Nolan"})[0]
+puts christopher_nolan.id
+
+# Adding people to person table
+person = Person.new
+person.name = "Christian Bale"
+person.save
+
+person = Person.new
+person.name = "Anne Hathaway"
+person.save
+
+person = Person.new
+person.name = "Michael Cain"
+person.save
+
+person = Person.new
+person.name = "Liam Neeson"
+person.save
+
+person = Person.new
+person.name = "Katie Holmes"
+person.save
+
+person = Person.new
+person.name = "Gary Oldman"
+person.save
+
+person = Person.new
+person.name = "Heath Ledger"
+person.save
+
+person = Person.new
+person.name = "Aaron Eckhart"
+person.save
+
+person = Person.new
+person.name = "Maggie Gyllenhaal"
+person.save
+
+person = Person.new
+person.name = "Tom Hardy"
+person.save
+
+person = Person.new
+person.name = "Joseph Gordon-Levitt"
+person.save
+
+puts "There are #{Person.all.count} persons"
+
+# Adding Movies to movies table
+batman_begins = Movie.new
+batman_begins.title = "Batman Begins"
+batman_begins.year = "2005"
+batman_begins.rating = "PG-13"
+# batman_begins.person_id = christopher_nolan.id
+batman_begins.save
+
+dark_knight = Movie.new
+dark_knight.title = "The Dark Knight"
+dark_knight.year = "2008"
+dark_knight.rating = "PG-13"
+# batman_begins.person_id = christopher_nolan.id
+dark_knight.save
+
+dark_knight_rises = Movie.new
+
